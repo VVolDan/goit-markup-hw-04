@@ -170,13 +170,11 @@ img {
 }
 
 .envelope {
-  color: inherit;
   margin-right: 10px;
   fill: currentColor;
 }
 
 .smartphone {
-  color: inherit;
   margin-right: 10px;
   fill: currentColor;
 }
@@ -470,14 +468,19 @@ img {
   margin-left: 70px;
   padding-top: 12px;
 }
+
 .join-us-text {
+  color: var(--prime-color);
   margin-bottom: 20px;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--prime-color);
+}
+
+.join-us-list {
+  display: flex;
 }
 
 .join-us-link {
@@ -485,8 +488,13 @@ img {
   padding: 12px;
 
   border-radius: 50%;
-  background-color: var(--shadow-color);
   fill: var(--prime-color);
+  background-color: var(--shadow-color);
+}
+
+.join-us-link:focus,
+.join-us-link:hover {
+  background-color: var(--accent-color);
 }
 
 .join-us-item:not(:last-child) {
